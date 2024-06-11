@@ -1,0 +1,47 @@
+/* code general */
+/* appliquer du style pour tout le contenu avec * */
+*{
+
+}
+/* declaration de variables  */
+:root{
+    --primaryColor: #076CDD;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+/* nav bar */
+.navbar{
+    background-color: black !important;
+}
+.navbar ul li a{
+    color: white;
+    text-transform: uppercase;/* mettre le texte en majuscule */
+    font-size: 14px; /* changer la taille du texte*/
+}
+.navbar ul li a.active{
+    color: var(--primaryColor) !important;
+    font-weight: bold;
+}
+.navbar ul li A:hover{
+    color: var(--primaryColor);
+    border-bottom: 2px solid #eee;
+}
+.navbar ul li.dropdown ul {
+    background-color: black;
+}
+.navbar ul li.dropdown ul li:hover{
+    display: inline-block;
+}
+
+/* banner */
+.banner{
+    height: 500px;
+    background: url(images/hero-bg.jpg) no-repeat center/cover fixed;
+    color: white;
+    text-align: center;
+     display: flex; 
+    align-items: center;
+    justify-content: center;
+}
